@@ -1,9 +1,9 @@
 
-Login into https://killercoda.com/killer-shell-ckad/scenario/playground and create a k8s playground
-Start the new playground
+Login into https://killercoda.com/killer-shell-ckad/scenario/playground and create a k8s playground. <br/>
+Start the new playground<br/><br/>
 
-Execute below command to start the Consul deployment. It will also spin a consul service on nodeport 30850
-k create -f https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-deploy.yml
+Execute below command to start the Consul deployment. It will also spin a consul service on nodeport 30850<br/>
+<code>k create -f https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-deploy.yml</code><br/><br/>
 
-In the playground, click the hamburger icon in the top right. Click on the "Traffic/Ports".
+In the playground, click the hamburger icon in the top right. Click on the "Traffic/Ports".<br/>
 Specify the Custom port as 30850. Click access button next to it. It will open a new tab and Consul UI should be visible in it.
