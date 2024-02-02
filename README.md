@@ -7,3 +7,17 @@ Execute below command to start the Consul deployment. It will also spin a consul
 
 In the playground, click the hamburger icon in the top right. Click on the "Traffic/Ports".<br/>
 Specify the Custom port as 30850. Click access button next to it. It will open a new tab and Consul UI should be visible in it.
+
+<br/><br/><br/>
+<code>
+mkdir configs
+cd configs/
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pod.yml
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pv.yml
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pvc.yml
+mkdir /mydata
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/agent.hcl
+mv agent.hcl /mydata/
+k create -f .
+k exec -it consul -- ls /consul/config
+</code>
