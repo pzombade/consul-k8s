@@ -23,4 +23,8 @@ sleep 15
 k exec -it consul -- consul acl bootstrap > tokens.txt
 cat tokens.txt
 
+consul kv import @kv.json
+export CONSUL_HTTP_TOKEN=61ae9200-3a6e-700d-a429-bf69b2656d80
+consul kv import @kv.json
+
 </code>
