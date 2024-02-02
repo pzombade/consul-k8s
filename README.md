@@ -26,7 +26,5 @@ mv consul-config-script.sh /mydata/
 
 k create -f .
 sleep 15
-k exec -it consul -- consul acl bootstrap > tokens.txt
-
-
+k exec -it consul -- echo $CONSUL_HTTP_TOKEN
 </code>
