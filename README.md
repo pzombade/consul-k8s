@@ -19,5 +19,8 @@ mkdir /mydata
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/agent.hcl
 mv agent.hcl /mydata/
 k create -f .
-k exec -it consul -- ls /consul/config
+sleep 15
+k exec -it consul -- consul acl bootstrap > tokens.txt
+cat tokens.txt
+
 </code>
