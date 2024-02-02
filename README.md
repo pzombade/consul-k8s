@@ -10,17 +10,23 @@ Specify the Custom port as 30850. Click access button next to it. It will open a
 
 <br/><br/><br/>
 <code>
+mkdir /consul
 mkdir configs
 cd configs/
-wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pod.yml
-wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pv.yml
-wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pvc.yml
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pod.yml
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pv.yml
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pvc.yml
 wget https://github.com/pzombade/consul-k8s/raw/config-create-kv/consul-config-script.sh
-mkdir /mydata
-wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/kv.json
-mv kv.json /mydata/
+
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/agent.hcl
+mkdir /consul/config
+mv agent.hcl /consul/config
+
 chmod 755 consul-config-script.sh
-mv consul-config-script.sh /mydata/
+mv consul-config-script.sh /consul/
+
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/kv.json
+mv kv.json /consul/
 
 k create -f .
 sleep 15
