@@ -32,7 +32,7 @@ mv kv.json /consul/
 
 k create -f .
 sleep 15
-k exec -it consul -- echo $CONSUL_HTTP_TOKEN
+k exec consul -- sh -c /consul/consul-config-script.sh
 </code>
 
 <hr/>
