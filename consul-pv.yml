@@ -9,6 +9,6 @@ spec:
   capacity:
     storage: 100Mi
   accessModes:
-    - ReadWriteMany
+    - ReadWriteOnce
   hostPath:
     path: "/mydata"
