@@ -17,9 +17,7 @@ wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pv.yml
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pvc.yml
 wget https://github.com/pzombade/consul-k8s/raw/config-create-kv/consul-config-script.sh
 mkdir /mydata
-wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/agent.hcl
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/kv.json
-mv agent.hcl /mydata/
 mv kv.json /mydata/
 chmod 755 consul-config-script.sh
 mv consul-config-script.sh /mydata/
