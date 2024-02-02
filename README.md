@@ -26,3 +26,11 @@ k create -f .
 sleep 15
 k exec -it consul -- echo $CONSUL_HTTP_TOKEN
 </code>
+
+<hr/>
+Clean UP:
+
+<code>
+  k delete --force -f ./configs/
+  rm -rf /mydata/
+</code>
