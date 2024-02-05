@@ -1,6 +1,11 @@
 [
   {
-    "key": "config/ConsuldemoApplication/spring.consul.testKey",
+    "key": "config/springbootconsul/message",
+    "value": "VGVzdCBjb25zdWwgS1YgdmFsdWU="
+  },
+  
+  {
+    "key": "config/springbootconsul/token",
     "value": "VGVzdCBjb25zdWwgS1YgdmFsdWU="
   }
 ]
