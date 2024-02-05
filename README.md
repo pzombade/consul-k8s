@@ -32,8 +32,13 @@ mv consul-config-script.sh /consul/
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/kv.json
 mv kv.json /consul/
 
+echo "#### Creating the artifacts"
 k create -f .
+
+echo "#### Sleeping for 15 seconds"
 sleep 15
+
+echo "#### Executing the script in pod"
 k exec consul -- sh -c /consul/consul-config-script.sh
 
 ```
