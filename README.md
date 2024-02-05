@@ -18,7 +18,7 @@ cd configs/
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pod.yml
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pv.yml
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pvc.yml
-wget https://github.com/pzombade/consul-k8s/raw/config-create-kv/consul-config-script.sh
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-config-script.sh
 
 
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/agent.hcl
