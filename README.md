@@ -11,8 +11,8 @@ Specify the Custom port as 30850. Click access button next to it. It will open a
 <br/><br/><br/>
 
 <hr/>
-```
 
+```
 mkdir configs
 cd configs/
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pod.yml
@@ -35,8 +35,8 @@ mv kv.json /consul/
 k create -f .
 sleep 15
 k exec consul -- sh -c /consul/consul-config-script.sh
-```
 
+```
 <hr/>
 Clean UP:
 
