@@ -14,11 +14,11 @@ Specify the Custom port as 30850. Click access button next to it. It will open a
 
 mkdir configs
 cd configs/
-wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pod.yml
-wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pv.yml
-wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pvc.yml
-wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-config-script.sh
-wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/role-binding.yml
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pod.yml
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pv.yml
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pvc.yml
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-config-script.sh
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/role-binding.yml
 
 
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/agent.hcl
@@ -29,7 +29,7 @@ mv agent.hcl /consul/config
 chmod 755 consul-config-script.sh
 mv consul-config-script.sh /consul/
 
-wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/kv.json
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/kv.json
 mv kv.json /consul/
 
 echo "#### Creating the artifacts"
