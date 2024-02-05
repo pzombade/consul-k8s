@@ -9,7 +9,7 @@ In the playground, click the hamburger icon in the top right. Click on the "Traf
 Specify the Custom port as 30850. Click access button next to it. It will open a new tab and Consul UI should be visible in it.
 
 <br/><br/><br/>
-<code>
+```
 mkdir configs
 cd configs/
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/consul-pod.yml
@@ -23,4 +23,4 @@ sleep 15
 k exec -it consul -- consul acl bootstrap > tokens.txt
 cat tokens.txt
 
-</code>
+```
