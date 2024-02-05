@@ -8,10 +8,7 @@ Execute below command to start the Consul deployment. It will also spin a consul
 In the playground, click the hamburger icon in the top right. Click on the "Traffic/Ports".<br/>
 Specify the Custom port as 30850. Click access button next to it. It will open a new tab and Consul UI should be visible in it.
 
-<br/><br/><br/>
-
 <hr/>
-
 ```
 mkdir configs
 cd configs/
@@ -46,7 +43,8 @@ k exec consul -- sh -c /consul/consul-config-script.sh
 <hr/>
 Clean UP:
 
-<code>
+```
   k delete --force -f ./configs/
   rm -rf /mydata/
-</code>
+
+```
