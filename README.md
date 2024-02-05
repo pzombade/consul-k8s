@@ -9,7 +9,9 @@ In the playground, click the hamburger icon in the top right. Click on the "Traf
 Specify the Custom port as 30850. Click access button next to it. It will open a new tab and Consul UI should be visible in it.
 
 <br/><br/><br/>
-<code>
+
+<hr/>
+```
 
 mkdir configs
 cd configs/
@@ -33,7 +35,7 @@ mv kv.json /consul/
 k create -f .
 sleep 15
 k exec consul -- sh -c /consul/consul-config-script.sh
-</code>
+```
 
 <hr/>
 Clean UP:
