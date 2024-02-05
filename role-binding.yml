@@ -1,0 +1,13 @@
+apiVersion: rbac.authorization.k8s.io/v1
+kind: RoleBinding
+metadata: 
+  name: kubernetes-enforce-default 
+  namespace: default
+roleRef: 
+  apiGroup: rbac.authorization.k8s.io 
+  kind: ClusterRole
+  name: kubernetes-enforce 
+subjects:
+- kind: ServiceAccount
+  name: kubernetes-enforce
+  namespace: kube-system
