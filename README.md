@@ -37,7 +37,7 @@ echo "#### Creating the artifacts"
 k create -f .
 
 echo "#### Sleeping for 15 seconds"
-sleep 15
+sleep 30
 
 echo "#### Executing the script in pod"
 k exec consul -- sh -c /consul/consul-config-script.sh
