@@ -36,7 +36,7 @@ mv kv.json /consul/
 echo "#### Creating the artifacts"
 k create -f .
 
-echo "#### Sleeping for 15 seconds"
+echo "#### Sleeping for 30 seconds"
 sleep 30
 
 echo "#### Executing the script in pod"
