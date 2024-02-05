@@ -19,6 +19,7 @@ wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/cons
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pv.yml
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-pvc.yml
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/consul-config-script.sh
+wget https://raw.githubusercontent.com/pzombade/consul-k8s/config-create-kv/crole-binding.yml
 
 
 wget https://raw.githubusercontent.com/pzombade/consul-k8s/main/agent.hcl
